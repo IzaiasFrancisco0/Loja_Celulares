@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <div class="sucesso"></div>
+    <div class="formulario">
+        <div class="form">
+            <h1>Preencha as informações</h1>
+            <label>Digite seu Nome Completo</label>
+            <input type="text" id="nome" name="nome" required />
+            <label>Digite seu Email</label>
+            <input type="text" id="email" name="email" required />
+            <label>Digite seu numero de Telefone</label>
+            <input type="text" id="telefone" name="telefone" maxlength="8" required />
+            <label for="card-number">Número do Cartão de Crédito</label>
+            <input type="text" id="card-number" name="card-number" class="card-input" maxlength="19"
+                pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="1234 5678 9101 1121" autocomplete="cc-number" required>
+            <label>Escolha o cartão</label>
+            <div class="cartoes">
+
+                <input class="ball" data-name="cartão_visa" type="radio" id="card1" name="card-choice" value="1">
+                <label for="card1"><img src="https://th.bing.com/th/id/R.58b4551e776343b347660dbb400e6041?rik=dlNwmUhVEmq%2bTw&riu=http%3a%2f%2fwww.techsmart.co.za%2fdata%2farticles%2fbasic%2ffeatures%2fnews%2fnews%2fVisa-research-reveals-SA-Nigeria-and-Kenya-are-top-drivers-of-eCommerce-volumes-in-SSA%2fvisa_inc._logo.jpg&ehk=o3uAaKVxdjORwyDoReAQ%2bg0hV5YbSyOqzVMSEMhKuV8%3d&risl=&pid=ImgRaw&r=0" /></label>
+                <input class="ball" data-name="cartão_masterCard" type="radio" id="card2" name="card-choice" value="2">
+                <label for="card2"><img src="https://i.pinimg.com/736x/77/17/e7/7717e75e28ccefa9e5aa86a08ec13305.jpg" /></label>
+                <input class="ball" data-name="cartão_portoSeguro" type="radio" id="card3" name="card-choice" value="3">
+                <label for="card3"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple125/v4/58/ed/64/58ed64e0-d6f5-8253-1df2-5c4e5881a528/source/512x512bb.jpg" /></label>
+            </div>
+            <span class="mensagem"></span>
+            <button type="submit">Enviar</button>
+        </div>
+    </div>
+    <div class="rodape">
+        <div class="image">
+            <img src="SITE-SEGURO.png" />
+        </div>
+    </div>
+    <script src="compra.js"></script>
+</body>
+
+</html>
